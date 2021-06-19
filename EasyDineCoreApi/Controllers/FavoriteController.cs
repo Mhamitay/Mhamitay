@@ -21,7 +21,11 @@ namespace EasyDineCoreApi.Controllers
             _DataRepository = dataRepository;
         }
         // GET: api/<FavoriteController>
-     
+        /// <summary>
+        ///    GET: api/<FavoriteController>
+        /// </summary>
+        /// <param name="searchViewModel"></param>
+        /// <returns></returns>
         [HttpPost("Favorite")]
         public IActionResult Favorite(SearchViewModel searchViewModel)
         {
