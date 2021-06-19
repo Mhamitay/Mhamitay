@@ -339,7 +339,7 @@ namespace EasyDine.Persistance
                                      select r).ToList();
                         }
 
-                    if (Query!=null && Query.Count() >= 0)
+                    if (Query!=null && Query.Count() > 0)
                     {
                         List<BlackList> queryBlacklist = (from r in _blakList.Where(b => b.userId == criteria.user_ID && b.isBlakListed == true)
                                                           select r).ToList();

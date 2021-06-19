@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EasyDineCoreApi</name>
+    </assembly>
+    <members>
+        <member name="M:EasyDineCoreApi.Controllers.RestaurantsController.Get">
+            <summary>
+            get all restaurants 
+            </summary>
+            <returns> acton resault </returns>
+        </member>
+    </members>
+</doc>
