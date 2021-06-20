@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace EasyDineCoreApi.Controllers
 {
+    /// <summary>
+    /// Favorites API End point
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class FavoriteController : ControllerBase
@@ -20,12 +23,11 @@ namespace EasyDineCoreApi.Controllers
         {
             _DataRepository = dataRepository;
         }
-        // GET: api/<FavoriteController>
         /// <summary>
-        ///    GET: api/<FavoriteController>
+        ///    Toogle (Un/Favorites) a Restaurants for specific user
         /// </summary>
         /// <param name="searchViewModel"></param>
-        /// <returns></returns>
+        /// <returns>it dose not return anything</returns>
         [HttpPost("Favorite")]
         public IActionResult Favorite(SearchViewModel searchViewModel)
         {

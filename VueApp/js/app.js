@@ -137,10 +137,12 @@
     submitsearch: function () {
         GetRestaurants(this.restaurant);
     },
-    sortme: function (r) {
-      this.errorMessage = "";
-      this.listOfRestaurants = _.sortBy(this.listOfRestaurants, r);
-    },
+    sortlist: function (by) {
+        this.errorMessage = "";
+         
+            this.listOfRestaurants = _.sortBy(this.listOfRestaurants, by);
+
+        },
     GetRestaurants: function () {
       this.listOfRestaurants = [];
       this.pageIsloading = true;
@@ -162,6 +164,9 @@
     search: function () {
         this.restaurant.user_ID = parseInt(this.restaurant.user_ID);
         var URL = this.appUrl + "/api/restaurants/search";
+        this.errorMessage= "",
+        this.warningMessage= "",
+        this.infoMessage= "",
        axios
       .post(URL ,this.restaurant)
       .then(

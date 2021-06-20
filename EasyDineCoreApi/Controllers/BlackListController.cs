@@ -9,7 +9,9 @@ using System.Threading.Tasks;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace EasyDineCoreApi.Controllers
-{
+{  /// <summary>
+   /// BlackList API End point
+   /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class BlackListController : ControllerBase
@@ -40,7 +42,11 @@ namespace EasyDineCoreApi.Controllers
             return Ok("Bad request please try again ");
         }
 
-     
+        /// <summary>
+        ///    Un Blacklist all restaurants
+        /// </summary>
+        /// <param name="searchViewModel"></param>
+        /// <returns>it dose not return anything</returns>
         [HttpPost("Delete")]
         public IActionResult Delete(SearchViewModel searchViewModel)
         {
@@ -65,7 +71,11 @@ namespace EasyDineCoreApi.Controllers
             }
             return Ok("Bad request please try again ");
         }
-
+        /// <summary>
+        ///    Blacklist a Restaurant
+        /// </summary>
+        /// <param name="searchViewModel"></param>
+        /// <returns>it dose not return anything</returns>
         [HttpPost("Blacklist")]
         public IActionResult Blacklist(SearchViewModel searchViewModel)
         {

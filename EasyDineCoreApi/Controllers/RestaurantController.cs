@@ -12,20 +12,17 @@ namespace EasyDineCoreApi.Controllers
 [ApiController]
  public class RestaurantsController : ControllerBase
 {
-    /// <summary>
-    /// construction 
-    /// </summary>
     public IDataRepository _DataRepository { get; }
     public RestaurantsController(IDataRepository dataRepository)
     {
         _DataRepository = dataRepository;
     }
-    
-    /// <summary>
-        /// get all restaurants 
+
+        /// <summary>
+        /// Get list of restaurants 
         /// </summary>
-        /// <returns> acton resault </returns>
-    [HttpGet]
+        /// <returns> list of restaurants  </returns>
+        [HttpGet]
     public IActionResult Get()
     {
         if (ModelState.IsValid)
@@ -43,7 +40,11 @@ namespace EasyDineCoreApi.Controllers
             }
             return Ok("Bad request please try again ");
     }
-
+        /// <summary>
+        ///     Search for restaurant base on the SearchViewMode
+        /// </summary>
+        /// <param name="searchViewModel"></param>
+        /// <returns></returns>
     [HttpPost("Search")]
     public IActionResult Search(SearchViewModel searchViewModel)
         {

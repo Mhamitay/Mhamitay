@@ -4,11 +4,54 @@
         <name>EasyDineCoreApi</name>
     </assembly>
     <members>
+        <member name="T:EasyDineCoreApi.Controllers.BlackListController">
+            <summary>
+            BlackList API End point
+            </summary>
+        </member>
+        <member name="M:EasyDineCoreApi.Controllers.BlackListController.Delete(EasyDine.Domain.SearchViewModel)">
+            <summary>
+               Un Blacklist all restaurants
+            </summary>
+            <param name="searchViewModel"></param>
+            <returns>it dose not return anything</returns>
+        </member>
+        <member name="M:EasyDineCoreApi.Controllers.BlackListController.Blacklist(EasyDine.Domain.SearchViewModel)">
+            <summary>
+               Blacklist a Restaurant
+            </summary>
+            <param name="searchViewModel"></param>
+            <returns>it dose not return anything</returns>
+        </member>
+        <member name="T:EasyDineCoreApi.Controllers.FavoriteController">
+            <summary>
+            Favorites API End point
+            </summary>
+        </member>
+        <member name="M:EasyDineCoreApi.Controllers.FavoriteController.Favorite(EasyDine.Domain.SearchViewModel)">
+            <summary>
+               Toogle (Un/Favorites) a Restaurants for specific user
+            </summary>
+            <param name="searchViewModel"></param>
+            <returns>it dose not return anything</returns>
+        </member>
+        <member name="T:EasyDineCoreApi.Controllers.RestaurantsController">
+            <summary>
+            Restaurant API End point
+            </summary>
+        </member>
         <member name="M:EasyDineCoreApi.Controllers.RestaurantsController.Get">
             <summary>
-            get all restaurants 
+            Get list of restaurants 
             </summary>
-            <returns> acton resault </returns>
+            <returns> list of restaurants  </returns>
+        </member>
+        <member name="M:EasyDineCoreApi.Controllers.RestaurantsController.Search(EasyDine.Domain.SearchViewModel)">
+            <summary>
+                Search for restaurant base on the SearchViewMode
+            </summary>
+            <param name="searchViewModel"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>
