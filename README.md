@@ -1,49 +1,54 @@
-🛠 Tech Arsenal
+## 🛠 Core Stack
 
-⚙️ ASP.NET Core (Web API, MVC)
+- **C# / .NET 8+**
+- **ASP.NET Core (Web API, MVC)**
+- **Entity Framework Core**
+- **LINQ & Async/Await**
+- **SQL Server & Performance Tuning**
+- **JWT Authentication & Identity**
+- **Unit & Integration Testing**
+- **Docker & Cloud Deployments**
 
-🧠 C# / .NET 8+
+---
 
-🗄 Entity Framework Core
+## 🏗 Architecture Principles
 
-🏗 Clean Architecture & SOLID principles
+- Clean Architecture  
+- SOLID Principles  
+- Dependency Injection  
+- Separation of Concerns  
+- Scalable & Maintainable Design  
 
-🔐 Authentication & Authorization (JWT, Identity)
+---
 
-🧪 Unit & Integration Testing
+## 🚀 Currently Engineering
 
-🐳 Docker & Cloud-ready deployments
+- AI-powered systems within .NET ecosystems  
+- Multi-tenant SaaS platforms  
+- High-performance backend services  
 
-⚡ Performance optimization & scalable systems
+---
 
-🧩 What I Build
+## 🤝 Collaboration
 
-Multi-tenant SaaS platforms
+Open to building:
+- Scalable backend systems  
+- Enterprise-grade APIs  
+- Complex, architecture-driven platforms  
 
-RESTful APIs built for scale
+---
 
-Secure enterprise applications
+## 🌐 Connect
 
-Automation-driven systems
+- LinkedIn: https://www.linkedin.com/in/hamitay/
 
-📈 Currently Leveling Up
+---
 
-AI integration inside .NET ecosystems
+```powershell
+PS> dotnet build
+Build succeeded.
+0 Warning(s)
+0 Error(s)
+```
 
-Distributed systems & microservices
-
-High-performance backend architectures
-
-🤝 Let’s Collaborate
-
-I’m interested in:
-
-Complex backend challenges
-
-Architecture-heavy systems
-
-Long-term scalable products
-
-🌐 Connect
-
-LinkedIn: https://www.linkedin.com/in/hamitay/
+> “Design for scale. Code for clarity. Optimize for performance.”
